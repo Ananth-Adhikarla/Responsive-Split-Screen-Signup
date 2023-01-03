@@ -1,6 +1,6 @@
 # Responsive Split-Screen Sign Up Form
 
-[Click here to try it live...](https://ananth-adhikarla.github.io/PixelSketch/)
+[Click here to try it live...](https://ananth-adhikarla.github.io/Responsive-Split-Screen-Signup/)
 
 ---
 
