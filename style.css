@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+	font-size: 100%;
+	font-size: 16px;
+	line-height: 1.6;
+	--primary-blue: #233975;
+	--primary-white: white;
+	--primary-pink: #C70C35;
+	--secondary-pink: #D55384;
+	--secondary-pink-hover: #b2466f;
+	letter-spacing: 1.5px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: var(--primary-white);
+	background: hsla(337, 61%, 58%, 1);
+	background: linear-gradient(294deg, hsla(337, 61%, 58%, 1) 0%, hsla(295, 44%, 30%, 1) 22%, hsla(314, 49%, 24%, 1) 46%, hsla(285, 44%, 14%, 1) 67%, hsla(289, 34%, 12%, 1) 86%, hsla(289, 48%, 9%, 1) 100%);
+	background: -moz-linear-gradient(294deg, hsla(337, 61%, 58%, 1) 0%, hsla(295, 44%, 30%, 1) 22%, hsla(314, 49%, 24%, 1) 46%, hsla(285, 44%, 14%, 1) 67%, hsla(289, 34%, 12%, 1) 86%, hsla(289, 48%, 9%, 1) 100%);
+	background: -webkit-linear-gradient(294deg, hsla(337, 61%, 58%, 1) 0%, hsla(295, 44%, 30%, 1) 22%, hsla(314, 49%, 24%, 1) 46%, hsla(285, 44%, 14%, 1) 67%, hsla(289, 34%, 12%, 1) 86%, hsla(289, 48%, 9%, 1) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D55384", endColorstr="#672A6D", GradientType=1 );
+}
+
+h1 {
+	font-size: 2.25rem;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+a {
+	text-decoration: none;
+	color: var(--primary-pink);
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+small {
+	font-size: 80%;
+	text-align: center;
+}
+
+.split-screen {
+	display: flex;
+	flex-direction: column;
+	height: auto;
+}
+
+.left {
+	height: 400px;
+}
+
+.left, .right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.left {
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+							url('vaporwave.gif');
+	/* background-size: cover; */
+	background-size: 100% 100%;
+}
+
+.right {
+	margin-top: 30px;
+}
+
+.left.section-text {
+	color: var(--primary-white);
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-smoothing: grayscale;
+}
+
+.left .section-text {
+	display: flex;
+	align-self: flex-start;
+	margin-top: 0px;
+	background: #0000001f;
+	width: 100%;
+	justify-content: center;
+}
+
+.right .section-text {
+	color: var(--primary-white);
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.right .section-text .small {
+	font-size: 0.875rem;
+}
+
+.right .info-main {
+	font-size: 1.15rem;
+	font-weight: 600;
+}
+
+.right .info-main p {
+	color: transparent !important;
+	background: url("1.gif");
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-smoothing: grayscale;
+}
+
+.right .info-main .last-text {
+	color: var(--primary-white) !important;
+	margin-top: 20px;
+	text-decoration: underline;
+	font-size: 1.15rem;
+}
+
+form .row {
+	display: flex;
+	flex-direction: column;
+}
+
+form .row .col {
+	width: 100%;
+}
+
+.right .sign-in {
+	display: flex;
+	justify-content: center;
+}
+
+.right .section-text .p {
+	margin: 1.5em 0;
+	font-size: 0.875rem;
+}
+
+.right form {
+	width: 350px;
+}
+
+form input[type="text"], 
+	form input[type="email"], 
+		form input[type="password"],
+			form input[type="tel"] {
+			display: block;
+			width: 100%;
+			box-sizing: border-box;
+			border-radius: 8px;
+			border: 1px solid #c4c4c4;
+			padding: 1em;
+			margin-bottom: 1.25rem;
+			font-size: 0.875rem;
+}
+
+label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-size: 0.75rem;
+}
+
+.signup-btn {
+	display: block;
+	width: 40%;
+	background: var(--secondary-pink);
+	color: white;
+	font-weight: 700;
+	border: none;
+	padding: 1rem;
+	border-radius: 8px;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-bottom: 2.25rem;
+	margin-top: 1rem;
+}
+
+.signup-btn:hover {
+	background: var(--secondary-pink-hover);
+	cursor: pointer;
+}
+
+.right .footer {
+	 margin-bottom: 10px;
+	 font-size: 0.55rem;
+}
+
+.right .footer .github-link i {
+	font-size: 1rem !important;
+}
+
+
+@media screen and (min-width: 900px) {
+
+	.split-screen {
+		flex-direction: row;
+		height: 100vh;
+	}
+
+	.left, .right {
+		display: flex;
+		height: auto;
+	}
+
+	.left {
+		width: 40%;
+	}
+
+	.right {
+		width: 60%;
+		margin-top: 0;
+	}
+
+	.left .section-text {
+		display: flex;
+    align-self: flex-start;
+    margin-top: 200px;
+    background: #0000001f;
+    width: 100%;
+    justify-content: center;
+	}
+
+	.right form {
+		width: 550px;
+	}
+	
+	.right .info-main {
+		font-size: 2rem;
+		font-weight: 600;
+	}
+
+	.right .signup{
+		display: flex;
+		justify-content: center;
+	}
+
+	form .row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+	form .row .col {
+		width: 45%;
+	}
+
+	.right .footer {
+		margin-bottom: 10px;
+		font-size: 0.75rem;
+ }
+ 
+ .right .footer .github-link i {
+	 font-size: 1.55rem !important;
+ }
+}
